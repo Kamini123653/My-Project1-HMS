@@ -1,0 +1,60 @@
+export interface NavItem { path: string; icon: string; label: string; }
+
+export const NAV: Record<string, NavItem[]> = {
+  Admin: [
+    { path: '/admin/dashboard', icon: '◧', label: 'Dashboard' },
+    { path: '/admin/users', icon: '☺', label: 'Manage Users & Roles' },
+    { path: '/admin/departments', icon: '▤', label: 'Manage Departments' },
+    { path: '/admin/doctors', icon: '⚕', label: 'Manage Doctors & Staff' },
+    { path: '/admin/wards', icon: '▦', label: 'Ward & Bed Setup' },
+    { path: '/admin/reports', icon: '▥', label: 'Reports & Analytics' },
+    { path: '/admin/settings', icon: '⚙', label: 'System Settings' },
+    { path: '/change-password', icon: '🔒', label: 'Change Password' },
+  ],
+  Doctor: [
+    { path: '/doctor/dashboard', icon: '◧', label: 'Doctor Dashboard' },
+    { path: '/doctor/queue', icon: '≡', label: 'My Appointments (OPD Queue)' },
+    { path: '/doctor/ipd', icon: '🛏', label: 'IPD Rounds / Patient List' },
+    { path: '/doctor/reports', icon: '▥', label: 'View Reports' },
+    { path: '/change-password', icon: '🔒', label: 'Change Password' },
+  ],
+  Nurse: [
+    { path: '/nurse/dashboard', icon: '◧', label: 'Nurse Dashboard' },
+    { path: '/nurse/vitals', icon: '♥', label: 'Record Vitals' },
+    { path: '/nurse/ipd', icon: '🛏', label: 'IPD Patient List' },
+    { path: '/change-password', icon: '🔒', label: 'Change Password' },
+  ],
+  Receptionist: [
+    { path: '/reception/dashboard', icon: '◧', label: 'Reception Dashboard' },
+    { path: '/reception/register', icon: '✎', label: 'Patient Registration' },
+    { path: '/reception/appointment', icon: '📅', label: 'Book / Manage Appointment' },
+    { path: '/reception/ipd-admit', icon: '🛏', label: 'IPD Admission' },
+    { path: '/reception/beds', icon: '▦', label: 'Bed Allocation' },
+    { path: '/reception/discharge', icon: '🚪', label: 'Discharge Desk' },
+    { path: '/reception/bill', icon: '₹', label: 'Generate OPD Bill' },
+    { path: '/change-password', icon: '🔒', label: 'Change Password' },
+  ],
+  Pharmacist: [
+    { path: '/pharmacy/dashboard', icon: '◧', label: 'Pharmacy Dashboard' },
+    { path: '/pharmacy/queue', icon: '≡', label: 'Prescription Queue' },
+    { path: '/pharmacy/inventory', icon: '▤', label: 'Medicine Inventory' },
+    { path: '/pharmacy/purchase', icon: '⇩', label: 'Purchase / Stock Entry' },
+    { path: '/pharmacy/lowstock', icon: '⚠', label: 'Low Stock Alerts' },
+    { path: '/change-password', icon: '🔒', label: 'Change Password' },
+  ],
+  Lab: [
+    { path: '/lab/dashboard', icon: '◧', label: 'Diagnostics Dashboard' },
+    { path: '/lab/queue', icon: '≡', label: 'Test Order Queue' },
+    { path: '/lab/collection', icon: '✎', label: 'Sample Collection Entry' },
+    { path: '/lab/results', icon: '📄', label: 'Enter Test Results' },
+    { path: '/change-password', icon: '🔒', label: 'Change Password' },
+  ],
+  Accountant: [
+    { path: '/billing/dashboard', icon: '◧', label: 'Accounts Dashboard' },
+    { path: '/billing/consolidated', icon: '₹', label: 'Consolidated Billing & Invoices' },
+    { path: '/billing/payments', icon: '💳', label: 'Payment Collection' },
+    { path: '/billing/insurance', icon: '🛡', label: 'Insurance / TPA Claims' },
+    { path: '/billing/reports', icon: '▥', label: 'Financial Reports' },
+    { path: '/change-password', icon: '🔒', label: 'Change Password' },
+  ],
+};
